@@ -10,9 +10,10 @@ namespace Recursion
     {
         static void Main(string[] args)
         {
-            input 
-            int number = 
-
+            Console.WriteLine("Factorial time!");
+            int n = 0;
+            while(!int.TryParse(Console.ReadLine(), out n));
+            Factorial(n);
         }
 
 
@@ -25,14 +26,18 @@ namespace Recursion
         private static string Factorial(int number)
         {
             int count = number - 1;
+
             number = number * count;
-            
 
-             
-            
+            if (count != 1)
+            {
+                Factorial(number);
+            }
+            else
+            {
+                return (int number);
 
-            return number;
-
+            }
         }
     }
 }
