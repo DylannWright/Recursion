@@ -17,7 +17,6 @@ namespace Recursion
             
         }
 
-
         /// <summary>
         /// Factorial
         /// </summary>
@@ -29,7 +28,6 @@ namespace Recursion
             if (number == 1)
             {
                 return (number);
-                
             }
             return number * Factorial(number - 1);
         }
